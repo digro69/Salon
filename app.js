@@ -15,8 +15,8 @@
     d.id = d.r + '|' + d.n;
     d.pos = i;
     d.t = norm([d.r, d.n, d.c, d.a.join(' '), d.s].join(' '));
-    // « \ » en tête = « J'ai de la chance » de DuckDuckGo (1er résultat)
-    d.url = 'https://duckduckgo.com/?q=' + encodeURIComponent('\\' + d.n + ' ' + d.r + ' vin');
+    // d.u = site trouvé à l'avance (1er résultat de recherche) ; sinon, simple recherche
+    d.url = d.u || 'https://duckduckgo.com/?q=' + encodeURIComponent(d.n + ' ' + d.r + ' vin');
   });
 
   var regions = [];
@@ -49,7 +49,7 @@
         (d.b ? '<span class="badge bio">Bio</span>' : '') +
         (d.h ? '<span class="badge hve">HVE</span>' : '') +
         (d.f ? '<span class="badge new">1er salon</span>' : '') +
-        '<a href="' + d.url + '" target="_blank" rel="noopener">Site Internet ↗</a>' +
+        '<a href="' + d.url + '" target="_blank" rel="noopener">' + (d.u ? 'Site Internet' : 'Rechercher') + ' ↗</a>' +
       '</div></article>';
   }
 
