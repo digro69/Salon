@@ -1,0 +1,17 @@
+{
+  "name": "Vignerons Indépendants Lyon 2026",
+  "short_name": "Salon Lyon 2026",
+  "description": "Exposants du Salon des Vignerons Indépendants de Lyon 2026",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf6f5",
+  "theme_color": "#8b2635",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

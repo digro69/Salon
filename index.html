@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vignerons Indépendants Lyon 2026</title>
+<meta name="description" content="Liste des exposants du Salon des Vignerons Indépendants de Lyon 2026">
+<meta name="theme-color" content="#8b2635">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Salon Lyon 2026">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Salon des Vignerons Indépendants</h1>
+  <p>Lyon 2026 · exposants</p>
+</header>
+
+<div class="bar">
+  <input type="search" id="q" placeholder="Domaine, contact, appellation, stand…" autocomplete="off" enterkeyhint="search">
+  <div class="row">
+    <select id="reg" aria-label="Région viticole"></select>
+    <select id="sort" aria-label="Tri">
+      <option value="reg">Tri : région</option>
+      <option value="nom">Tri : nom A→Z</option>
+      <option value="stand">Tri : stand</option>
+    </select>
+  </div>
+  <div class="chips">
+    <label class="chip"><input type="checkbox" id="bio"><span>Bio</span></label>
+    <label class="chip"><input type="checkbox" id="hve"><span>HVE</span></label>
+    <label class="chip"><input type="checkbox" id="new"><span>1er salon</span></label>
+    <label class="chip"><input type="checkbox" id="fav"><span>★ Favoris</span></label>
+  </div>
+  <div id="count" aria-live="polite"></div>
+</div>
+
+<main id="list"></main>
+
+<p class="note">Le lien « Site Internet » ouvre le premier résultat de recherche DuckDuckGo pour chaque domaine (non vérifié).</p>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
