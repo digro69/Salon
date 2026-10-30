@@ -1,5 +1,5 @@
 // Incrémenter VERSION à chaque publication pour forcer la mise à jour du cache.
-const VERSION = 'v1';
+const VERSION = 'v3';
 const CACHE = 'svi-lyon-2026-' + VERSION;
 const FILES = [
   './', 'index.html', 'style.css', 'app.js', 'data.js', 'manifest.webmanifest',
